@@ -1,0 +1,131 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --border: 3px;
+}
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Very-Light-Gray);
+}
+.up {
+  display: grid;
+  justify-content: center;
+}
+.top-h {
+  text-align: center;
+}
+h1.top-noblod {
+  font-weight: 200;
+}
+h1 {
+  color: var(--Very-Dark-Blue);
+}
+p.header {
+  color: var(--Grayish-Blue);
+}
+.boxes {
+  display: grid;
+  gap: 30px;
+}
+.box.right,
+.box.left {
+  align-self: center;
+}
+.box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px 0 var(--Grayish-Blue);
+  position: relative;
+}
+.center {
+  display: grid;
+  gap: 30px;
+}
+h2 {
+  color: var(--Very-Dark-Blue);
+}
+.box-p {
+  color: var(--Grayish-Blue);
+}
+.box.left {
+  border-top: var(--border) solid var(--Cyan);
+}
+.box.top {
+  border-top: var(--border) solid var(--Red);
+}
+.box.bottom {
+  border-top: var(--border) solid var(--Orange);
+}
+.box.right {
+  border-top: var(--border) solid var(--Blue);
+}
+img.im-b {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+@media (min-width: 981px) {
+  .boxes {
+    grid-template-columns: auto auto auto;
+  }
+  .top-h {
+    width: 500px;
+    margin: 30px auto;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .box {
+    width: 400px;
+    height: 250px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 22.5px;
+  }
+  .box-p {
+    font-size: 15px;
+  }
+  .im-b {
+    width: 64px;
+  }
+}
+@media (min-width: 320px) and (max-width: 980px) {
+  .boxes {
+    grid-template-columns: auto;
+  }
+  .top-h {
+    width: 870px;
+    margin: 80px auto;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .box {
+    width: 700px;
+    margin: 10px auto;
+    height: 350px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .box-p {
+    font-size: 33px;
+  }
+  .im-b {
+    width: 100px;
+  }
+}
